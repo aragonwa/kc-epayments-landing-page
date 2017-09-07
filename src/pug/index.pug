@@ -1,0 +1,49 @@
+extends includes/base
+block whichtheme
+  - var theme = 'corporate'
+block isfullwidth
+  - var colSize = 'col-md-12'
+block breadcrumb
+  include includes/breadcrumb
+block custom-style
+  if production
+    link(href="/css/custom.css" rel='stylesheet' type='text/css')
+  else
+    link(href="/styles/css/custom.css" rel='stylesheet' type='text/css')
+block main-content
+  .row.addon-row.addon-row-attached
+    .col-sm-12
+      .page-header
+        h1 Make a payment to King County
+  .row.addon-row.addon-row-attached
+    .col-sm-12
+      p
+        strong Select the payment you would like to make:
+      .row.is-flex
+        .col-sm-4
+          .call-out-text.call-out-text-default.text-center
+            .call-out-text-content
+              h2.m-t-0 
+                a(href="#") Tax Payments
+              p Pay your real property or presonal property tax bills
+        .col-sm-4
+          .call-out-text.call-out-text-default.text-center
+            .call-out-text-content
+              h2.m-t-0
+                a(href="#") Capacity Charge
+              p Pay your capacity charge bill
+        .col-sm-4
+          .call-out-text.call-out-text-default.text-center
+            img(src="https://unsplash.it/768/250")
+            .call-out-text-content
+              h2.m-t-0 
+                a(href="#") Option with picture
+              p Make donations to non-profit agencies
+              p.text-muted
+                em 
+                  span.fa.fa-lock 
+                  | &nbsp;For King County employees only
+    .col-sm-12
+      p.m-t-lg.p-t-md(style="border-top:6px solid #426773")
+        | If you don't see what you're looking for here, see&nbsp;
+        a(href="#") search results for "online payments".

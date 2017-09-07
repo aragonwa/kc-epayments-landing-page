@@ -1,0 +1,50 @@
+@theme: #426773;
+@paymentEngineGreen: #5D7D39;
+@greyDark: #4C4943;
+.row.is-flex .call-out-text{
+  padding:0;
+  .call-out-text-content {
+    padding:15px;
+  }
+}
+@media(min-width: 768px){
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+.row.is-flex .call-out-text {
+  height:100%;
+  border-color: @theme;
+}
+
+/*
+* And with max cross-browser enabled.
+* Nobody should ever write this by hand. 
+* Use a preprocesser with autoprefixing.
+*/
+.row.is-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+}
