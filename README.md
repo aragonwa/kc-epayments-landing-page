@@ -1,9 +1,9 @@
 # ePayments Landing Page
-[Bill details](https://kc-epayments-landing-page.surge.sh)
+[Landing page](https://kc-epayments-landing-page.surge.sh)
 
 
 # Updates
-10/1
+9/7
   * Initial push
 ## Where are the files I need?
 ```
